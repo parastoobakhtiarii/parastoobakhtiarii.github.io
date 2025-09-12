@@ -1,0 +1,49 @@
+/* Simple, clean, responsive academic site */
+:root{
+  --bg:#0b0c0e;
+  --card:#14161a;
+  --text:#e8eaed;
+  --muted:#aab0b6;
+  --accent:#6ee7ff;
+  --max:1080px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.65}
+
+.container{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
+.site-header{position:sticky;top:0;background:rgba(11,12,14,.7);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #20252b;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:3.5rem}
+.brand{font-weight:800;text-decoration:none;color:var(--text)}
+nav a{color:var(--muted);text-decoration:none;margin-left:1rem}
+nav a:hover{color:var(--text)}
+
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:2rem;padding:4rem 0 2rem 0;align-items:center}
+.hero h1{font-size:2.5rem;margin:0 0 .5rem 0}
+.accent{color:var(--accent)}
+.hero .meta{margin:.75rem 0;color:var(--muted);display:flex;gap:.5rem;flex-wrap:wrap}
+.hero .icons a{margin-right:1rem;color:var(--accent);text-decoration:none}
+.hero-photo img{width:100%;border-radius:1rem;border:1px solid #2c3238}
+
+.section{padding:2.5rem 0;border-top:1px solid #20252b}
+.section h2{margin-top:0}
+
+.news-list{list-style:none;padding:0;margin:0}
+.news-list li{padding:.5rem 0;border-bottom:1px dashed #242b31}
+.news-list .date{display:inline-block;width:6.5rem;color:var(--muted)}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:var(--card);padding:1rem;border:1px solid #20252b;border-radius:1rem}
+.card h3{margin-top:0}
+.links a{margin-right:1rem;color:var(--accent);text-decoration:none}
+
+.pubs{padding-left:1.2rem}
+.pubs li{margin:.5rem 0}
+
+.code-list{padding-left:1.2rem}
+.site-footer{padding:2rem 0;color:var(--muted);border-top:1px solid #20252b;margin-top:2rem;text-align:center}
+
+@media (max-width: 900px){
+  .hero{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+}
