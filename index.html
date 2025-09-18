@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Parastou Ahadpour Bakhtiari — Research</title>
-  <meta name="description" content="Personal academic website">
+  <meta name="description" content="Parastou Ahadpour Bakhtiari — simulation environments for autonomous systems; robotics and computer vision research.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -16,10 +16,10 @@
       <a class="brand" href="#home">Parastou Ahadpour Bakhtiari</a>
       <nav>
         <a href="#home">Home</a>
-        <a href="#news">News</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#courses">Courses</a>
         <a href="#code">Code</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -30,36 +30,30 @@
     <section class="hero container">
       <div class="hero-text">
         <h1>Hi! I'm <span class="accent">Parastou Ahadpour Bakhtiari</span></h1>
-        <p>Graduate Research Assistant at <strong>Mississippi State University</strong>, focusing on robotics, computer vision, and AI.
-        My work centers on building realistic simulation environments that model agricultural imaging settings, enabling robust evaluation and transfer of autonomous perception systems to real-world conditions.</p>
+        <p>Graduate Research Assistant at <strong>Mississippi State University</strong>. 
+        I build <strong>realistic simulation environments</strong> to benchmark and transfer autonomous perception systems to real-world agricultural settings, connecting robotics and computer vision with robust, reproducible evaluation.</p>
         <div class="meta">
           <span>Starkville, Mississippi</span>
           <span>·</span>
           <a href="mailto:pa526@msstate.edu">pa526@msstate.edu</a>
         </div>
         <div class="icons">
-          <a href="https://www.linkedin.com/in/parastoubakhtiari" target="_blank" rel="noopener" aria-label="LinkedIn">
-            LinkedIn
-          </a>
-          <a href="https://github.com/parastoobakhtiarii" target="_blank" rel="noopener" aria-label="GitHub">
-            GitHub
-          </a>
-          <a href="assets/CV.pdf" target="_blank" rel="noopener" aria-label="CV">
-            CV
-          </a>
+          <a href="https://www.linkedin.com/in/parastoubakhtiari" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/parastoobakhtiarii" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="assets/CV.pdf" target="_blank" rel="noopener" aria-label="CV">CV</a>
         </div>
       </div>
       <div class="hero-photo">
-        <img src="assets/img/my_profile.jpg" alt="Profile photo (replace assets/img/profile.jpg)">
+        <img src="assets/img/my_profile.jpg" alt="Portrait of Parastou Ahadpour Bakhtiari">
       </div>
     </section>
 
-    <section id="news" class="container section">
+    <!-- Keep News for later; hide it now -->
+    <section id="news" class="container section" style="display:none">
       <h2>News</h2>
       <ul class="news-list">
-        <li><span class="date">Jul 2025</span> Received <strong>NSF XYZ</strong> award (with collaborators …).</li>
-        <li><span class="date">May 2025</span> Our paper on <em>Sim-to-Real SLAM</em> accepted to ICRA.</li>
-        <li><span class="date">Jan 2025</span> Released dataset and code for <em>ECE segmentation</em>.</li>
+        <li><span class="date">Jul 2025</span> Your future update here.</li>
+        <li><span class="date">May 2025</span> Another update.</li>
       </ul>
     </section>
 
@@ -67,28 +61,28 @@
       <h2>Research</h2>
       <div class="grid">
         <article class="card">
-          <h3>3D Perception for Off-road Robots</h3>
-          <p>Self-supervised traversability, uncertainty-aware planning, and digital twins for agricultural robotics.</p>
+          <h3>Simulation Environments for Ag Robotics</h3>
+          <p>Designing controllable, data-informed simulators to evaluate SLAM and perception algorithms across crop stages, lighting, and sensor configs.</p>
           <div class="links">
-            <a href="#" target="_blank">Paper</a>
+            <a href="#" target="_blank">Overview</a>
             <a href="#" target="_blank">Code</a>
             <a href="#" target="_blank">Video</a>
           </div>
         </article>
         <article class="card">
-          <h3>CT-based ECE Detection</h3>
-          <p>Dual-head Swin-UNETR for segmentation-guided classification with teacher-gated learning.</p>
-          <div class="links">
-            <a href="#" target="_blank">Preprint</a>
-            <a href="#" target="_blank">Code</a>
-          </div>
-        </article>
-        <article class="card">
-          <h3>Sim-to-Real SLAM</h3>
-          <p>Quantifying the sim-to-real gap across ORB-SLAM3 and RTAB-Map using paired ROS2 bags.</p>
+          <h3>Sim-to-Real SLAM Evaluation</h3>
+          <p>Paired ROS2 datasets for ORB-SLAM3 / RTAB-Map to quantify the sim-to-real gap (ATE/RPE/IoU/loop closures) and test transfer methods.</p>
           <div class="links">
             <a href="#" target="_blank">Preprint</a>
             <a href="#" target="_blank">Dataset</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>CT-based ECE Detection</h3>
+          <p>Segmentation-guided classification (3D) with teacher-gated learning for robust ECE prediction from clinical CT.</p>
+          <div class="links">
+            <a href="#" target="_blank">Preprint</a>
+            <a href="#" target="_blank">Code</a>
           </div>
         </article>
       </div>
@@ -99,43 +93,53 @@
       <ol class="pubs">
         <li>
           <span class="authors">Your Name</span>, Coauthor B, Coauthor C.
-          <strong>Title of Paper.</strong> <em>Conference/Journal</em>, 2025.
-          <a href="#">paper</a> · <a href="#">code</a> · <a href="#">bibtex</a>
+          <strong>Title of Paper.</strong> <em>Venue</em>, 2025.
+          <a href="#" target="_blank">paper</a> · <a href="#" target="_blank">code</a> · <a href="#" target="_blank">bibtex</a>
         </li>
         <li>
           Author A, <span class="authors">Your Name</span>.
-          <strong>Another Title.</strong> <em>Journal</em>, 2024.
-          <a href="#">paper</a> · <a href="#">code</a>
+          <strong>Another Title.</strong> <em>Venue</em>, 2024.
+          <a href="#" target="_blank">paper</a> · <a href="#" target="_blank">code</a>
         </li>
       </ol>
     </section>
 
-    <section id="teaching" class="container section">
-      <h2>Teaching</h2>
+    <section id="presentations" class="container section">
+      <h2>Presentations</h2>
       <ul>
-        <li>Fall 2025 — <strong>Intro to Robotics</strong> (TA)</li>
-        <li>Spring 2025 — <strong>Computer Vision</strong> (Guest lecture: Domain Adaptation)</li>
+        <li><strong>Advancing SLAM in Agriculture:</strong> Comparative study of NeRF vs. traditional methods — <em>AI in Agriculture & Natural Resources Conference</em>, 2025. <a href="#" target="_blank">slides</a> · <a href="#" target="_blank">poster</a></li>
+        <li><strong>ECE Detection from CT:</strong> Segmentation-guided classification — <em>Seminar/Workshop</em>, 2024. <a href="#" target="_blank">slides</a></li>
+      </ul>
+    </section>
+
+    <section id="courses" class="container section">
+      <h2>Selected Coursework</h2>
+      <ul>
+        <li><strong>Robotics</strong>: SLAM & Perception, Robot Kinematics & Control, Planning & Decision-Making</li>
+        <li><strong>Computer Vision / ML</strong>: Deep Learning, 3D Vision, Domain Adaptation, Probabilistic Graphical Models</li>
+        <li><strong>Systems</strong>: ROS2, GPU Programming, High-Performance Computing</li>
+        <li><strong>Medical Imaging</strong>: 3D Image Analysis, Segmentation, Representation Learning</li>
       </ul>
     </section>
 
     <section id="code" class="container section">
       <h2>Selected Code</h2>
       <ul class="code-list">
-        <li><a href="#">mavs-ros2-bridge</a> — ROS2 bridge for MAVS sensors and topics.</li>
-        <li><a href="#">swinunetr-ece</a> — 3D medical imaging pipeline for ECE detection.</li>
-        <li><a href="#">woodchip-detection</a> — Jetson Nano deployment for object detection.</li>
+        <li><a href="#" target="_blank">mavs-ros2-bridge</a> — ROS2 bridge for MAVS sensors and topics.</li>
+        <li><a href="#" target="_blank">swinunetr-ece</a> — 3D medical imaging pipeline for ECE detection.</li>
+        <li><a href="#" target="_blank">woodchip-detection</a> — Jetson Nano deployment for object detection.</li>
       </ul>
     </section>
 
     <section id="contact" class="container section">
       <h2>Contact</h2>
-      <p>Starkville, MS · <a href="mailto:you@university.edu">you@university.edu</a></p>
+      <p>Starkville, MS · <a href="mailto:pa526@msstate.edu">pa526@msstate.edu</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Your Name. Adapted from an open-source template.</p>
+      <p>© <span id="year"></span> Parastou Ahadpour Bakhtiari.</p>
     </div>
   </footer>
 
