@@ -45,5 +45,21 @@ nav a:hover{color:var(--text)}
 
 @media (max-width: 900px){
   .hero{grid-template-columns:1fr}
+  /* Smaller, round avatar */
+.hero-photo.small-avatar img{
+  max-width: 160px;           /* adjust 140–200px to taste */
+  width: 100%;
+  border-radius: 999px;       /* circle */
+  border: 1px solid #2c3238;
+}
+
+/* If you want the hero text to have more room on desktop */
+@media (min-width: 901px){
+  .hero{
+    grid-template-columns: 1.6fr 0.4fr;  /* text wider, photo narrower */
+    align-items: start;
+  }
+}
+
   .grid{grid-template-columns:1fr}
 }
