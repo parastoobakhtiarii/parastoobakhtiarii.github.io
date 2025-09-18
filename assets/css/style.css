@@ -25,41 +25,45 @@ nav a:hover{color:var(--text)}
 .hero .icons a{margin-right:1rem;color:var(--accent);text-decoration:none}
 .hero-photo img{width:100%;border-radius:1rem;border:1px solid #2c3238}
 
+/* Smaller, round avatar */
+.hero-photo.small-avatar img{
+  max-width:160px;
+  width:100%;
+  border-radius:999px;
+  border:1px solid #2c3238;
+}
+
+/* Sections */
 .section{padding:2.5rem 0;border-top:1px solid #20252b}
 .section h2{margin-top:0}
 
+/* News */
 .news-list{list-style:none;padding:0;margin:0}
 .news-list li{padding:.5rem 0;border-bottom:1px dashed #242b31}
 .news-list .date{display:inline-block;width:6.5rem;color:var(--muted)}
 
+/* Cards grid */
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .card{background:var(--card);padding:1rem;border:1px solid #20252b;border-radius:1rem}
 .card h3{margin-top:0}
 .links a{margin-right:1rem;color:var(--accent);text-decoration:none}
 
+/* Publications */
 .pubs{padding-left:1.2rem}
 .pubs li{margin:.5rem 0}
 
+/* Code list */
 .code-list{padding-left:1.2rem}
+
+/* Footer */
 .site-footer{padding:2rem 0;color:var(--muted);border-top:1px solid #20252b;margin-top:2rem;text-align:center}
 
-@media (max-width: 900px){
-  .hero{grid-template-columns:1fr}
-  /* Smaller, round avatar */
-.hero-photo.small-avatar img{
-  max-width: 160px;           /* adjust 140–200px to taste */
-  width: 100%;
-  border-radius: 999px;       /* circle */
-  border: 1px solid #2c3238;
+/* Responsive YouTube embeds */
+.video-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
-
-/* If you want the hero text to have more room on desktop */
-@media (min-width: 901px){
-  .hero{
-    grid-template-columns: 1.6fr 0.4fr;  /* text wider, photo narrower */
-    align-items: start;
-  }
-}
-
-  .grid{grid-template-columns:1fr}
-}
+.video{display:flex;flex-direction:column;gap:.5rem}
+.video-frame{
+  position: relative;
