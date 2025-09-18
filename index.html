@@ -16,10 +16,12 @@
       <a class="brand" href="#home">Parastou Ahadpour Bakhtiari</a>
       <nav>
         <a href="#home">Home</a>
+        <a href="#videos">Videos</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#presentations">Presentations</a>
         <a href="#courses">Courses</a>
+        <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -42,8 +44,8 @@
           <a href="assets/CV.pdf" target="_blank" rel="noopener" aria-label="CV">CV</a>
         </div>
       </div>
-      <div class="hero-photo">
-        <img src="assets/img/my_profile.jpg" alt="Portrait of Parastou Ahadpour Bakhtiari">
+      <div class="hero-photo small-avatar">
+        <img src="assets/img/my_profile.jpg" alt="Portrait of Parastou Ahadpour Bakhtiari" loading="lazy">
       </div>
     </section>
 
@@ -53,6 +55,51 @@
       <ul class="news-list">
         <li><span class="date">Future Date</span> Example update goes here.</li>
       </ul>
+    </section>
+
+    <section id="videos" class="container section">
+      <h2>Videos</h2>
+      <div class="video-grid">
+        <!-- Replace VIDEO_ID_X with your actual YouTube IDs -->
+        <div class="video">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_1"
+              title="RTAB-Map Launching"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"></iframe>
+          </div>
+          <p class="video-caption">RTAB-Map launching on real data</p>
+        </div>
+
+        <div class="video">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_2"
+              title="RViz Launch"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"></iframe>
+          </div>
+          <p class="video-caption">RViz live visualization</p>
+        </div>
+
+        <div class="video">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_3"
+              title="ORB-SLAM3 on Real Data"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"></iframe>
+          </div>
+          <p class="video-caption">ORB-SLAM3 on field bag file</p>
+        </div>
+      </div>
     </section>
 
     <section id="research" class="container section">
@@ -117,6 +164,22 @@
         <li><strong>Systems</strong>: ROS2, GPU Programming, High-Performance Computing</li>
         <li><strong>Medical Imaging</strong>: 3D Image Analysis, Segmentation, Representation Learning</li>
       </ul>
+    </section>
+
+    <section id="gallery" class="container section">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <!-- Replace with your images -->
+        <a href="assets/img/gallery/full_01.jpg" target="_blank" class="thumb">
+          <img src="assets/img/gallery/thumb_01.jpg" alt="Field robot test — cotton rows" loading="lazy">
+        </a>
+        <a href="assets/img/gallery/full_02.jpg" target="_blank" class="thumb">
+          <img src="assets/img/gallery/thumb_02.jpg" alt="RViz visualization — point cloud" loading="lazy">
+        </a>
+        <a href="assets/img/gallery/full_03.jpg" target="_blank" class="thumb">
+          <img src="assets/img/gallery/thumb_03.jpg" alt="Simulation environment — row crops" loading="lazy">
+        </a>
+      </div>
     </section>
 
     <!-- Hidden for now -->
